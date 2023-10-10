@@ -34,8 +34,8 @@ export const counterSlice = createSlice({
   name: 'counter',  // Name of the slice
   initialState: 0,  // Initial state
   reducers: {
-    increment: (state) => state + 1,
-    decrement: (state) => state - 1,
+    increment: (state, action) => state + 1, // state can't mutate.
+    decrement: (state, action) => state - 1,
   },
 });
 
@@ -180,6 +180,6 @@ export default counterSlice.reducer;
   - These are functions that, when called, return action objects that can be dispatched to the Redux store. When such an action is dispatched, the reducer function associated with that action type is called to calculate the new state.
 
 ### Summary:
-- `createSlice` generates a reducer function and action creators based on the definitions you provide.
+- `createSlice` generates a **reducer function and action creators** based on the definitions you provide.
 - The generated reducer understands how to adjust the state based on actions dispatched with the generated action creators.
 - By exporting and then utilizing the reducer when configuring your store, you tell the Redux store how to handle specific actions and adjust the state accordingly.
