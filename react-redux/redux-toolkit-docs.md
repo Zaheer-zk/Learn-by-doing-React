@@ -1,6 +1,6 @@
 ### What is Redux Toolkit?
 
-Redux Toolkit is the official, opinionated, batteries-included toolset for efficient Redux development. It comes with a set of helper functions and utilities that help you reduce the boilerplate code and manage the state efficiently.
+Redux Toolkit is a set of helper functions and utilities that help you reduce the boilerplate code and manage the state efficiently.
 
 ### Key Parts of Redux Toolkit:
 
